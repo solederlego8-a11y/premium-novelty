@@ -11,7 +11,19 @@
 <nav id="nav" class="nav" aria-label="グローバルナビゲーション"><a href="products.html">商品一覧</a><a href="premium.html">高級ノベルティ</a><a href="ranking.html">人気ランキング</a><a href="blog/index.html">ブログ</a><a href="guide.html">ご利用の流れ</a><a class="btn btn-sm" href="contact.html">見積もりを依頼</a></nav>
 <button class="menu" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">☰</button>
 </div></header>
-<main><div class="page-h"><div class="wrap"><p class="crumb"><a href="index.html">ホーム</a> › 見積もり・お問い合わせ</p><h1>見積もり・お問い合わせ</h1><p>商品名・数量・納期をお知らせください。</p></div></div><div class="wrap" style="padding:36px 20px 64px"><div class="prose"><p>現在、お問い合わせフォームを準備しています。恐れ入りますが、しばらくしてから、もう一度お試しください。</p><p><a class="btn" href="products.html">商品一覧へ</a></p></div></div></main>
+<main><div class="page-h"><div class="wrap"><p class="crumb"><a href="index.html">ホーム</a> › 見積もり・お問い合わせ</p><h1>見積もり・お問い合わせ</h1><p>商品名・数量・納期をお知らせください。</p></div></div><div class="wrap" style="padding:36px 20px 64px"><div class="formcard"><form id="cf" action="thanks.html" method="POST" data-e="bmFvcmVuLjM4QGdtYWlsLmNvbQ==">
+<input type="hidden" name="_subject" value="売れてるノベルティマーケット 見積もり依頼"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="_next" value="https://solederlego8-a11y.github.io/premium-novelty/thanks.html">
+<div class="row"><label>お名前<input name="name" required autocomplete="name"></label>
+<label>メールアドレス<input type="email" name="email" required autocomplete="email"></label></div>
+<label>ご依頼の商品<small>商品ページから来た場合は自動で入ります</small><input name="item" id="item"></label>
+<div class="row"><label>数量<input name="qty" inputmode="numeric" placeholder="例：300"></label>
+<label>ご希望の納期<input name="deadline" placeholder="例：12月上旬まで"></label></div>
+<label>ご要望・ご質問<textarea name="message" rows="6" placeholder="用途やデザインのイメージなど、わかる範囲でお書きください"></textarea></label>
+<label class="check"><input type="checkbox" required><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します</span></label>
+<button class="btn" type="submit">送信する</button></form>
+<noscript><p>お手数ですが、JavaScriptを有効にしてお問い合わせください。</p></noscript></div>
+<script>document.getElementById('cf').addEventListener('submit',function(){this.action='https://formsubmit.co/'+atob(this.dataset.e)})</script>
+<script>document.getElementById('item').value=new URLSearchParams(location.search).get('item')||''</script></div></main>
 <section class="cta-band"><h2>まずはお気軽にご相談ください</h2>
 <p>商品名・数量・ご希望の納期をお知らせいただければ、お見積もりをご案内します。</p>
 <a class="btn" href="contact.html">見積もりを依頼する</a></section>

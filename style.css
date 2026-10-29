@@ -90,9 +90,10 @@ section.sec{padding:64px 0}section.sec.alt{background:#fff}
 .page-h{background:#fff;border-bottom:1px solid var(--line)}.page-h .wrap{padding-top:36px;padding-bottom:30px}
 .page-h h1{margin:0;font-size:1.8rem;color:var(--navy);line-height:1.4}.page-h p{margin:6px 0 0;color:var(--muted)}
 .crumb{font-size:.82rem;color:var(--muted);margin:0 0 10px}.crumb a{text-decoration:none}.crumb a:hover{text-decoration:underline}
+[hidden]{display:none!important}
 .toolbar{display:flex;gap:12px;flex-wrap:wrap;margin:28px 0 14px}
 .toolbar input,.toolbar select{font:inherit;padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;min-width:0}
-.toolbar input{flex:1;min-width:220px}
+.toolbar input{flex:1;min-width:220px}.toolbar .sbtn{padding:11px 26px;border-radius:12px}
 .chips{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:10px}
 .chips button{font:inherit;font-size:.86rem;border:1px solid var(--line);background:#fff;border-radius:999px;padding:6px 14px;cursor:pointer;color:var(--ink)}
 .chips button:hover{border-color:var(--accent)}.chips button.on{background:var(--navy);color:#fff;border-color:var(--navy)}

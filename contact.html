@@ -19,7 +19,7 @@ gtag('config', 'G-CFEKRWW8P0', { anonymize_ip: true });
 <nav id="nav" class="nav" aria-label="グローバルナビゲーション"><a href="products.html">商品一覧</a><a href="premium.html">高級ノベルティ</a><a href="ranking.html">人気ランキング</a><a href="blog/index.html">ブログ</a><a href="guide.html">ご利用の流れ</a><a class="btn btn-sm" href="contact.html">見積もりを依頼</a></nav>
 <button class="menu" type="button" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">☰</button>
 </div></header>
-<main><div class="page-h"><div class="wrap"><p class="crumb"><a href="index.html">ホーム</a> › 見積もり・お問い合わせ</p><h1>見積もり・お問い合わせ</h1><p>商品名・数量・納期をお知らせください。</p></div></div><div class="wrap" style="padding:36px 20px 64px"><div class="formcard"><form id="cf" action="thanks.html" method="POST" data-e="bmFvcmVuLjM4QGdtYWlsLmNvbQ==" data-cc="bm92ZWx0eUBidWVuYXZpc3RhLW9ubGluZS5qcCxraXRhZGFAYnVlbmF2aXN0YS1vbmxpbmUuanA=">
+<main><div class="page-h"><div class="wrap"><p class="crumb"><a href="index.html">ホーム</a> › 見積もり・お問い合わせ</p><h1>見積もり・お問い合わせ</h1><p>商品名・数量・納期をお知らせください。</p></div></div><div class="wrap" style="padding:36px 20px 64px"><div class="formcard"><p style="text-align:center;margin:0 0 20px;font-size:.92rem;color:#344054">送信後、通常<strong>2営業日以内</strong>にご連絡いたします。</p><form id="cf" action="thanks.html" method="POST" data-e="bmFvcmVuLjM4QGdtYWlsLmNvbQ==" data-cc="bm92ZWx0eUBidWVuYXZpc3RhLW9ubGluZS5qcCxraXRhZGFAYnVlbmF2aXN0YS1vbmxpbmUuanA=">
 <input type="hidden" name="_subject" value="売れてるノベルティマーケット 見積もり依頼"><input type="hidden" name="_captcha" value="true"><input type="hidden" name="_next" value="https://solederlego8-a11y.github.io/premium-novelty/thanks.html">
 <div class="row"><label>お名前<input name="name" required autocomplete="name"></label>
 <label>メールアドレス<input type="email" name="email" required autocomplete="email"></label></div>
@@ -28,11 +28,12 @@ gtag('config', 'G-CFEKRWW8P0', { anonymize_ip: true });
 <label>ご希望の納期<input name="deadline" placeholder="例：12月上旬まで"></label></div>
 <label>ご要望・ご質問<textarea name="message" rows="6" placeholder="用途やデザインのイメージなど、わかる範囲でお書きください"></textarea></label>
 <label class="check"><input type="checkbox" required><span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>に同意します</span></label>
-<button class="btn" type="submit">送信する</button></form>
+<input type="hidden" name="_referrer" id="ref_input"><button class="btn" type="submit">送信する</button></form>
 <noscript><p>お手数ですが、JavaScriptを有効にしてお問い合わせください。</p></noscript>
 <p class="note">フォームから送信できない場合は、<a href="mailto:novelty@buenavista-online.jp">novelty@buenavista-online.jp</a> まで直接メールをお送りください。</p></div>
 <script>document.getElementById('cf').addEventListener('submit',function(){this.action='https://formsubmit.co/'+atob(this.dataset.e);if(this.dataset.cc&&!this._cc){var i=document.createElement('input');i.type='hidden';i.name='_cc';i.value=atob(this.dataset.cc);this.appendChild(i);this._cc=1}})</script>
-<script>document.getElementById('item').value=new URLSearchParams(location.search).get('item')||''</script></div></main>
+<script>document.getElementById('item').value=new URLSearchParams(location.search).get('item')||''</script>
+<script>var ri=document.getElementById('ref_input');ri&&(ri.value=document.referrer||location.href)</script></div></main>
 <section class="cta-band"><h2>まずはお気軽にご相談ください</h2>
 <p>商品名・数量・ご希望の納期をお知らせいただければ、お見積もりをご案内します。</p>
 <a class="btn" href="contact.html">見積もりを依頼する</a></section>

@@ -40,6 +40,26 @@ gtag('config', 'G-W02HK1VTYF', { anonymize_ip: true });
   ]
 }
 </script>
+
+<style id="b3-pattern">
+:root{--b3-navy:#0B2A4A;--b3-blue:#0F4C81;--b3-ink:#1B2735;--b3-line:#D8E2EC;--b3-bg:#F4F8FB}
+h1{font-size:clamp(1.65rem,4.2vw,2.55rem);letter-spacing:.01em}
+h2{font-size:clamp(1.22rem,2.8vw,1.55rem)}
+.b3-band{max-width:1120px;margin:20px auto;padding:0 16px}
+.b3-band-in{display:flex;flex-wrap:wrap;gap:0;background:#fff;border:1px solid var(--b3-line);border-top:3px solid var(--b3-navy);border-radius:8px;overflow:hidden}
+.b3-band-item{flex:1 1 140px;padding:14px 16px;text-align:center}
+.b3-band-item+.b3-band-item{border-left:1px solid var(--b3-line)}
+.b3-band-item b{display:block;font-size:clamp(1.3rem,3vw,1.7rem);color:var(--b3-navy);line-height:1.2;font-weight:700}
+.b3-band-item span{display:block;margin-top:4px;font-size:.8rem;color:#44586E;line-height:1.4}
+@media (prefers-reduced-motion: no-preference){
+  html.b3js .b3-fade{opacity:0;transform:translateY(10px);transition:opacity .6s ease,transform .6s ease}
+  html.b3js .b3-fade.b3-in{opacity:1;transform:none}
+}
+@media (prefers-reduced-motion: reduce){
+  .b3-fade{opacity:1!important;transform:none!important}
+}
+:focus-visible{outline:2px solid var(--b3-blue);outline-offset:2px}
+</style>
 </head>
 <body class="">
 <header class="site-header"><div class="wrap bar">
@@ -53,6 +73,8 @@ gtag('config', 'G-W02HK1VTYF', { anonymize_ip: true });
 <p class="lead">素材や価格帯にこだわった商品を、人気のデータをもとに選んで掲載しています。記念品・贈答品・イベントの配布物まで、名入れ・オリジナル製作に対応。数量ごとの単価と校正代は、商品ページですぐに確認できます。</p>
 <div class="cta"><a class="btn" href="premium.html">高級ノベルティを見る</a><a class="btn btn-ghost" href="products.html">商品一覧</a></div>
 </div><div class="collage"><img src="images/shoebrushsetina-woodenbox.jpg" alt="" loading="eager" width="400" height="400"><img src="images/wooden-high-class-ballpoint-pen-with-wooden-box.jpg" alt="" loading="eager" width="400" height="400"><img src="images/imabari-hand-towel.jpg" alt="" loading="eager" width="400" height="400"></div></div></section>
+<div class="b3-band"><div class="b3-band-in"><div class="b3-band-item"><b>6カテゴリ</b><span>取扱いタイプ</span></div><div class="b3-band-item"><b>人気データ</b><span>掲載商品の選定</span></div><div class="b3-band-item"><b>数量単価</b><span>商品ページで確認</span></div><div class="b3-band-item"><b>名入れ対応</b><span>オリジナル製作</span></div></div></div>
+
 <div class="trust"><ul>
 <li><i>✓</i><span><b>データで選定</b>人気ランキングを定期更新</span></li>
 <li><i>✓</i><span><b>192商品</b>数量別の単価を一覧で確認</span></li>
@@ -77,4 +99,16 @@ gtag('config', 'G-W02HK1VTYF', { anonymize_ip: true });
 <div><h4>お問い合わせ</h4><ul><li><a href="contact.html">見積もり・お問い合わせ</a></li><li><a href="tokushoho.html">特定商取引法に基づく表記</a></li><li><a href="privacy.html">プライバシーポリシー</a></li></ul></div>
 </div><p class="copy">© 2026 株式会社ブエナビスタ　※画像はイメージです。実際の商品とは形・色・仕様が異なります。</p></div></footer>
 <script>const m=document.querySelector('.menu'),n=document.getElementById('nav');
-m&&m.addEventListener('click',()=>{const o=n.classList.toggle('open');m.setAttribute('aria-expanded',o)});</script></body></html>
+m&&m.addEventListener('click',()=>{const o=n.classList.toggle('open');m.setAttribute('aria-expanded',o)});</script>
+<script>
+(function(){document.documentElement.classList.add('b3js');
+var targets=document.querySelectorAll('section, main>div, .b3-band');
+var els=[];targets.forEach(function(e){if(!e.classList.contains('b3-fade')){e.classList.add('b3-fade');els.push(e);}});
+function show(e){e.classList.add('b3-in');}
+if(!('IntersectionObserver' in window)||window.matchMedia('(prefers-reduced-motion: reduce)').matches){els.forEach(show);return;}
+var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){show(en.target);io.unobserve(en.target);}});},{threshold:.05});
+els.forEach(function(e){io.observe(e);});
+setTimeout(function(){els.forEach(show);},2500);
+})();
+</script>
+</body></html>
